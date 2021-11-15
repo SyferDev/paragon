@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Shippori+Antique&display=swap");
+@import "foundation";
+
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+body {
+  background-color: $background-color;
+  color: white;
+  margin: 0;
+  font-family: "Kameron", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  h1 {
+    font-family: "Shippori Antique";
+  }
+}
+
+img {
+  pointer-events: none;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  font-family: "Shippori Antique";
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 0.5rem;
+  color: white;
+}
+
+button {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 0.5rem;
+  font-family: $body-font;
+  font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+hr {
+  color: $gray-line;
+}

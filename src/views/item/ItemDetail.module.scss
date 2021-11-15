@@ -1,0 +1,101 @@
+@import "../../foundation";
+
+.itemDetail {
+  background-image: url("../../images/bg.svg");
+  height: 100vh;
+  background-size: fill;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemImage {
+  flex: 40%;
+  background-color: $gray-bg;
+  border: 1px solid $gray-line;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 0;
+  img {
+    border-top: 1px solid $gray-line;
+    overflow: hidden;
+    margin-top: 30px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
+  margin-right: 20px;
+}
+
+.itemInfo {
+  flex: 60%;
+  span {
+    display: inline-flex;
+    align-items: center;
+
+    h3 {
+      margin-left: 5px;
+    }
+  }
+
+  .sale {
+    padding: 1rem;
+    border: 1px solid $gray-line;
+    border-radius: 10px;
+    background-color: $gray-bg;
+
+    * {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .saleData {
+      #priceLabel {
+        margin-top: 20px;
+      }
+      .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+
+        .conversion {
+          margin-left: 10px;
+          font-size: 1rem;
+          color: $img-bg;
+        }
+      }
+
+      .buyNow {
+        * {
+          margin-right: 10px;
+        }
+
+        button {
+          padding: 0.7rem 2rem;
+        }
+      }
+    }
+  }
+
+  .outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .description {
+    background-color: $gray-bg;
+    border: 1px solid $gray-line;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+    h3 {
+      margin: 0;
+    }
+  }
+}
